@@ -1,0 +1,303 @@
+:root {
+    --bg-dark: #121212;
+    --card-dark: #1e1e1e;
+    --gold: #d4af37;
+    --text-primary: #e0e0e0;
+    --text-secondary: #a0a0a0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    font-family: 'EB Garamond', serif;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.indexueberschrift {
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 800;
+    text-align: center;
+    width: 100%;
+}
+
+.indexueberschrift h1 {
+    font-family: 'Germania One', system-ui;
+    font-size: clamp(40px, 6vw, 80px);
+    color: var(--gold);
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-weight: normal;
+    letter-spacing: 2px;
+    border-bottom: none;
+}
+
+.indexboxen {
+    display: flex;
+    gap: 2vw;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 95%;
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+    width: 20vw;
+    height: 20vh;
+    min-width: 150px;
+    min-height: 100px;
+    max-width: 300px;
+    max-height: 200px;
+    background-color: var(--card-dark);
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    border-radius: 4px;
+    font-family: 'Almendra', serif;
+    font-size: clamp(20px, 2.5vw, 32px);
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.box1:hover,
+.box2:hover,
+.box3:hover,
+.box4:hover {
+    background-color: var(--gold);
+    color: var(--bg-dark);
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.4);
+}
+
+.back-button {
+    display: inline-block;
+    margin: 20px;
+    color: var(--text-secondary);
+    font-family: 'Almendra', serif;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.back-button:hover {
+    color: var(--gold);
+}
+
+.page-container {
+    max-width: 800px;
+    margin: 20px auto 60px auto;
+    padding: 40px;
+    background-color: var(--card-dark);
+    border: 1px solid #333;
+    border-top: 4px solid var(--gold);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+}
+
+.page-container h1 {
+    font-family: 'Germania One', system-ui;
+    color: var(--gold);
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.content-text p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.inline-link {
+    color: var(--gold);
+    border-bottom: 1px dotted var(--gold);
+    transition: all 0.3s;
+}
+
+.inline-link:hover {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.QuellenFooter {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    text-align: left;
+    line-height: 1.6;
+}
+
+.QuellenFooter a {
+    color: var(--gold);
+    font-family: Arial, Helvetica, sans-serif !important;
+    text-decoration: underline;
+    word-break: break-all;
+}
+
+.ArchiRomFlexBox1 {
+    display: flex;
+    gap: 15px;
+}
+
+.ArchiRomPic1 {
+    border-radius: 4px;
+    margin-top: 25px;
+    height: 12vh;
+    min-height: 138px;
+    width: auto;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.ArchiRomFlexBox2 {
+    display: flex;
+    gap: 15px;
+}
+
+.ArchiRomPic2 {
+    border-radius: 4px;
+    margin-top: 25px;
+    height: 13vh;
+    width: auto;
+    min-height: 155px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.ArchiRomFlexBox3 {
+    display: flex;
+    gap: 15px;
+}
+
+.ArchiRomPic3 {
+    border-radius: 4px;
+    margin-top: 25px;
+    height: 15vh;
+    min-height: 165px;
+    width: auto;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.content-textRom {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    margin-top: -3vh
+}
+
+.ArchiGotikFlexBox1 {
+    display: flex;
+    gap: 15px;
+}
+
+.ArchiGotikFlexBox2 {
+    display: flex;
+    gap: 15px;
+}
+
+.ArchiGotikPic1 {
+    display: flex;
+    border-radius: 4px;
+    margin-top: 25px;
+    height: 30vh;
+    min-height: 230px;
+    width: auto;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+}
+
+.ArchiRenaiPic1 {
+    border-radius: 4px;
+    margin-top: 25px;
+    height: 25vh;
+    min-height: 250px;
+    width: auto;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.ArchiRenaiFlexbox {
+    display: flex;
+    gap: 15px;
+}
+
+.ArchiBarockPic1 {
+    border-radius: 4px;
+    margin-top: 25px;
+    height: 4vh;
+    width: auto;
+    min-width: 210px;
+    min-height: 210px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.ArchiBarockFlexBox1 {
+    display: flex;
+    gap: 15px;
+}
+
+.ArchiBarockPic2 {
+    border-radius: 4px;
+    margin-top: 25px;
+    height: 4vh;
+    width: auto;
+    min-width: 300px;
+    min-height: 250px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.ArchiBarockFlexBox2 {
+    display: flex;
+    gap: 15px;
+}
+
+.h2Headline {
+    display: flex;
+    justify-content: center;
+    font-family: arial;
+}
+
+.enumeration {
+    font-family: arial;
+    font-size: 1.25rem;
+    line-height: 1.8;
+}
+
+.containerartists { 
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.artist {
+    width: 180px;
+}
+
+.artist img {
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+}
